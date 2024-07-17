@@ -1,4 +1,3 @@
-DataSet:
 Nome,Idade,Notas,Aprovado
 Ary,20,7.5,True
 Ana,18,,False
