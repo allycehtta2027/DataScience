@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Times</title>
+</head>
+<body>    
+     
+
+     <h1>Mostrando com um for</h1>
+     {% for time in times %} 
+         <h6>{{time.nome}}</h6>
+         <h6>{{time.vitorias}}</h6>
+     {% endfor %}
+
+
+     <h1>Mostrando em uma tabela</h1>
+     <table border="3">
+        <thead>
+            <tr>
+                <th>nome</th>
+                <th>vitórias</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            {% for time in times %} 
+               <tr>
+                 <td>{{time.nome}}</td>
+                 <td>{{time.vitorias}}</td>
+               </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+</body>
+</html>

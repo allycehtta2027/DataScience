@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciencia de dados</title>
+</head>
+<body>
+    <h2>Tela de login</h2>
+
+    <form action="/login" method="post">
+        <label for="ra"><b>RA</b></label>
+        <input type="text"  id="ra" name="ra" required maxlength="8">required
+
+
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body{
+    background-color: lightcoral;
+}
+h2, label{
+    color: #FFFFFF;
+ }
+
+ #botao{
+    color:blue;
+    background-color: rgb(94, 227, 231);
+}
+

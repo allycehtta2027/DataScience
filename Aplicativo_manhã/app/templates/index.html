@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Ciencia de dados</title>
+</head>
+<body>
+<h2>Tela de Login</h2>
+    {% if msgbanco %}
+    <div class="mensagem">
+        {{ msgbanco }}
+    </div>
+    {% endif %}
+    <form action="/logar" method="POST">
+        <label for="ra">RA:</label>
+        <input type="text" id="ra" name="ra" maxlength="8" required>
+        <input type="submit" id="botao" value="enviar">
+        {% if msgbanco %}
+        <div class="mensagem">
+            {{ msgbanco }}
+        </div>
+        {% endif %}
+            
+    </form> 
+    <a href="{{ url_for('cadastrar_aluno') }}">cadastre-se</a>
+
+</body>
+</html>
+

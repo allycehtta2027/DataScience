@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Aluno</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro de Alunos</h1>
+    <form action="/criaraluno" method="post">
+
+        <label for="ra">RA:</label>
+        <input type="text" id="ra" name="ra" maxlength="8" required>
+        <br><br>
+
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome">
+        <br><br>
+        <label for="tempoestudo"> Tempo de Estudo:</label>
+        <input type="number" id="tempoestudo" name="tempoestudo" required>
+        <br><br>
+        <label for="rendafamiliar"> Renda Familiar: </label>
+        <input type="text" id="rendafamiliar" name="rendafamiliar" required>
+        <br><br>
+        <input type="submit" id="botao" value="enviar">
+
+    </form>
+</body>
+</html>
